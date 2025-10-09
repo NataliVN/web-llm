@@ -3,8 +3,7 @@ document.getElementById('send-btn').onclick = async function () {
   document.getElementById('response').innerText = "Консультант думает...";
 
   request = {
-    "model": "lakomoor/vikhr-llama-3.2-1b-instruct:1b",
-    // "model": "owl/t-lite",
+    "model": "gemma3:1b",
     "messages": [
       {
         "role": "system",
