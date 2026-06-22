@@ -1,15 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Integration Demo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Консультант по продаже квартир</h1>
+  <h1>Консультант по VR Zion</h1>
+
+  <div class="controls">
+    <label>
+      Температура: <span id="temperature-value">0.5</span>
+      <input type="range" id="temperature" min="0" max="1" step="0.1" value="0.5">
+    </label>
+
+    <label>
+      Длина ответа: <span id="tokens-value">50</span>
+      <input type="range" id="tokens" min="10" max="300" step="10" value="50">
+    </label>
+  </div>
+
+  <div id="chat"></div>
+
+<div class="input-row">
   <textarea id="user-input" placeholder="Введите сообщение..."></textarea>
   <button id="send-btn">Отправить</button>
-  <div id="response"></div>
+</div>
+
   <script src="script.js"></script>
 </body>
 </html>
